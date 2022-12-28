@@ -1,8 +1,16 @@
+body {
+  width: 90%;
+  margin: 40px auto 0 auto;
+  font-family: "Montserrat", sans-serif;
+  max-width: 1440px;
+  color: #FF6060;
+}
+
 .bannerHomeOrAbout {
   position: relative;
-  max-height: 223px;
   padding: 0;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 .bannerHomeOrAbout__Img {
   width: 100%;
@@ -124,12 +132,67 @@ header {
     width: 35%;
   }
 }
-body {
-  width: 90%;
-  margin: 40px auto 0 auto;
-  font-family: "Montserrat", sans-serif;
-  max-width: 1400px;
-  color: #FF6060;
+.sectionHome {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 60px;
+  justify-items: center;
+  border-radius: 25px;
+  background: #f6f6f6;
+  padding: 50px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 992px) {
+  .sectionHome {
+    grid-template-columns: repeat(2, auto);
+    border-radius: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sectionHome {
+    background: #FFFFFF;
+    grid-template-columns: repeat(1, auto);
+    grid-gap: 20px;
+    padding: 0;
+  }
+}
+.oneCart {
+  position: relative;
+  display: block;
+  transition: 0.3s;
+}
+.oneCart:hover {
+  transform: scale(1.1);
+}
+.oneCart--title {
+  position: absolute;
+  left: 20px;
+  bottom: 23px;
+  color: #ffffff;
+  font-weight: 500;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+}
+.oneCart--img {
+  width: 100%;
+  height: 340px;
+  position: relative;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  .oneCart--img {
+    height: 290px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .oneCart {
+    width: 100%;
+  }
+  .oneCart--img {
+    height: 255px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
