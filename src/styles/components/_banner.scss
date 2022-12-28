@@ -1,6 +1,72 @@
-.lmj-banner {
-    color: red;
-    text-align: right;
-    padding: 32px;
-    border-bottom: solid 3px black;
+.bannerHomeOrAbout {
+      position: relative;
+      max-height: 223px;
+      padding: 0;
+      margin-top: 30px;
+
+      &__Img {
+            width: 100%;
+            height: 100%;
+            filter: brightness(0.6);
+            border-radius: 25px;
+            object-fit: cover;
+      }
+
+      &__text {
+            z-index: 1;
+            position: absolute;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            top: 0%;
+            bottom: 0;
+            color: #f2f2f2;
+            width: 80%;
+            font-size: 48px;
+            font-style: normal;
+      }
+
+      &__Smarphone {
+            display: none;
+      }
+}
+
+@media screen and (max-width: 992px) {
+      .bannerHomeOrAbout {
+            margin-top: 20px;
+
+            &__Img {
+                  border-radius: 20px;
+            }
+            &__text {
+                  font-size: 34px;
+            }
+      }
+}
+
+@media screen and (max-width: 768px) {
+      .bannerHomeOrAbout {
+            margin-top: 10px;
+            min-height: 110px;
+            &__Img {
+                  border-radius: 10px;
+                  height: 110px;
+            }
+            &__text {
+                  font-size: 24px;
+                  width: 95%;
+                  height: 100%;
+                  justify-content: flex-start;
+            }
+            &__textComputer {
+                  display: none;
+            }
+            &__Smarphone {
+                  display: block;
+            }
+      }
 }

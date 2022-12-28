@@ -1,0 +1,62 @@
+.navigation {
+display: flex;
+justify-content: space-between;
+width: 17%;
+font-size: 24px;
+
+
+    &__text--change { 
+        text-decoration : none;
+        color: #FF6060
+        
+        
+    }
+    &__active--change {
+        color : #FF6060
+    }
+
+}
+
+@media screen and (max-width: 1200px)
+{
+    .navigation {
+        width: 22%;
+        
+    }
+
+
+}
+
+@media screen and (max-width: 992px)
+{
+    .navigation {
+        width: 25%;
+        font-size: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px)
+{       .navigation{
+            width: 25%;
+            font-size: 12px;
+    }
+        .navigation__text--change { 
+            text-transform: uppercase;
+        
+        
+    }
+        .navigation__active--change {
+            text-transform: uppercase;
+    }
+
+
+}
+
+@media screen and (max-width: 600px){
+    .navigation{
+        width: 35%;
+    }
+
+}

@@ -12,6 +12,7 @@ function App() {
       <BrowserRouter>
           <Header />
           <Routes>
+            
             <Route path='/' element={<Homepage />} />
             <Route path='/home' element={<Homepage />} />
             <Route path='/lodging/:id' element={<Lodging />} />

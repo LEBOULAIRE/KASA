@@ -5,13 +5,15 @@ import logo from "../assets/images/logo_kasa.png"
 import { NavLink } from 'react-router-dom';
 // Import de Navigation
 import Navigation from "./Navigation"
+// Import du css header
+
 
 const Header = () => {
     return (
         <header>
             <div>
-                <NavLink to='/'>
-                <img src={logo} alt= "Logo de l'entreprise casa" />
+                <NavLink to='/' >
+                <img src={logo} alt= "Logo de l'entreprise casa" className="logo-header"/>
                 </NavLink>
             </div>
             <Navigation />
