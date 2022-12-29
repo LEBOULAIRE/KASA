@@ -10,10 +10,11 @@ const Banner = () => {
       const AltBanner = urlHome ? 'Image illustrant un paysage de mer' : 'Image illustrant une montagne';
       const textBannerComputer = urlHome ? <p className='bannerHomeOrAbout__textComputer'>Chez vous, partout et ailleurs</p> : null;
       const textBannerSmarphone = urlHome ? <p className='bannerHomeOrAbout__Smarphone'>Chez vous,<br/>partout et ailleurs</p> : null;
-      
+      const classNameHome = urlHome ? "bannerHomeOrAbout__Img" : "bannerHomeOrAbout__Img--home";
+
       return (
       <div className='bannerHomeOrAbout'>
-            <img src={ImgBanner} alt={AltBanner} className="bannerHomeOrAbout__Img" />
+            <img src={ImgBanner} alt={AltBanner} className={classNameHome} />
             <div className="bannerHomeOrAbout__text">
             {textBannerComputer}
             {textBannerSmarphone}

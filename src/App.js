@@ -10,6 +10,7 @@ import Lodging from './pages/Lodging';
 // function de l'apllication
 function App() {
     return (
+      
       <BrowserRouter>
           <Header />
           <Routes>

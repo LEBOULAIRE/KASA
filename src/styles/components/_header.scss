@@ -3,8 +3,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 width: 90%;
-margin-right: auto;
-margin-left: auto;
+margin: 0 auto 0 auto
 
 }
 
@@ -17,6 +16,7 @@ margin-left: auto;
 @media screen and (max-width: 768px){
     .logo-header{
         width: 60%;
+       
     }
 
 }

@@ -10,6 +10,13 @@
             border-radius: 25px;
             object-fit: cover;
       }
+      &__Img--home {
+            width: 100%;
+            height: 100%;
+            filter: brightness(0.6);
+            border-radius: 25px;
+            object-fit: cover;
+      }
 
       &__text {
             z-index: 1;
@@ -41,6 +48,9 @@
             &__Img {
                   border-radius: 20px;
             }
+            &__Img--home {
+                  border-radius: 20px;
+            }
             &__text {
                   font-size: 34px;
             }
@@ -50,10 +60,14 @@
 @media screen and (max-width: 768px) {
       .bannerHomeOrAbout {
             margin-top: 10px;
-            min-height: 110px;
+            
             &__Img {
                   border-radius: 10px;
-                  height: 110px;
+                  min-height: 110px;
+            }
+            &__Img--home {
+                  min-height: 223px;
+                  border-radius: 10px;
             }
             &__text {
                   font-size: 24px;
