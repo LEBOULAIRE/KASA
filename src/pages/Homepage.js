@@ -6,7 +6,7 @@ import SectionHome from '../components/SectionHome';
 
 const Homepage = () => {
     return (
-        <div>
+        <div className='pageHome'>
             <Banner />
             <SectionHome />
         </div>

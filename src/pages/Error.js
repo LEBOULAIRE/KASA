@@ -1,9 +1,10 @@
 import React from 'react';
+import NotError from '../components/NotError';
 
 const Error = () => {
     return (
-        <div>
-            <h1>Erreur 404</h1>
+        <div className='block__error'>
+           <NotError />
         </div>
     );
 };

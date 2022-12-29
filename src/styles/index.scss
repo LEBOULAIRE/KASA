@@ -2,6 +2,12 @@
 @import "./settings";
 @import "./components/banner";
 @import "./components/header";
-@import "./components/Navigation";
+@import "./components/navigation";
 @import "./components/sectionHome";
-@import "./components/cart"
+@import "./components/cart";
+@import "./components/NotError";
+@import "./components/footer";
+
+//Import pages
+@import "./pages/home";
+@import "./pages/error";

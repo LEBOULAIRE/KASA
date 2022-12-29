@@ -1,9 +1,9 @@
 body {
-  width: 90%;
   margin: 40px auto 0 auto;
   font-family: "Montserrat", sans-serif;
-  max-width: 1440px;
   color: #FF6060;
+  max-width: 1440px;
+  font-weight: 500;
 }
 
 .bannerHomeOrAbout {
@@ -77,7 +77,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media screen and (max-width: 992px) {
@@ -171,7 +173,7 @@ header {
   bottom: 23px;
   color: #ffffff;
   font-weight: 500;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
 }
 .oneCart--img {
   width: 100%;
@@ -193,6 +195,62 @@ header {
   .oneCart--img {
     height: 255px;
   }
+}
+.pageError {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pageError--number {
+  font-size: 288px;
+  font-weight: 700;
+  margin: 150px 0 0 0;
+}
+.pageError--text {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0 0 170px 0;
+}
+.pageError--toHome {
+  display: block;
+  font-size: 18px;
+  color: #FF6060;
+  margin-bottom: 150px;
+}
+
+.footer__block {
+  background: #000000;
+  width: 100%;
+  height: 210px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer__block--text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__block--text {
+    font-size: 15px;
+  }
+}
+.pageHome {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block__error {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*# sourceMappingURL=index.css.map */
