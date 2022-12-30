@@ -14,7 +14,9 @@ const Banner = () => {
 
       return (
       <div className='bannerHomeOrAbout'>
+            <div>
             <img src={ImgBanner} alt={AltBanner} className={classNameHome} />
+            </div>
             <div className="bannerHomeOrAbout__text">
             {textBannerComputer}
             {textBannerSmarphone}

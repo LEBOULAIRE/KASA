@@ -2,6 +2,17 @@
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom : 100px
 
 }
 
+.section__about {
+    
+    display: flex;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    align-items: center;
+    gap : 20px
+}
