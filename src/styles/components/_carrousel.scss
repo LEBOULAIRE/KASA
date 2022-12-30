@@ -1,0 +1,45 @@
+.main__lodging {
+    
+      position: relative;
+    
+      &--arrow-left {
+        position: absolute;
+        top : 50%;
+        transform: translateY(-50%);
+        left : 10px
+
+            {
+        }
+    
+    }
+    &--arrow-right {
+        position: absolute;
+        top : 50%;
+        transform: translateY(-50%);
+        right: 10px;
+    
+    }
+
+}
+
+.lodging__picture {
+      width: 100%;
+      object-fit: cover;
+      height: 415px;
+      border-radius: 25px;
+  
+    &--number {
+    position: absolute;
+    right: 50%;
+    transform: translateX(-50%);
+    bottom: 18px;
+    color: #f2f2f2;
+        background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0)
+);
+    
+    }
+
+}

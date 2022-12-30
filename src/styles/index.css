@@ -358,6 +358,37 @@ header {
     width: 20px;
   }
 }
+.main__lodging {
+  position: relative;
+}
+.main__lodging--arrow-left {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+}
+.main__lodging--arrow-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+}
+
+.lodging__picture {
+  width: 100%;
+  object-fit: cover;
+  height: 415px;
+  border-radius: 25px;
+}
+.lodging__picture--number {
+  position: absolute;
+  right: 50%;
+  transform: translateX(-50%);
+  bottom: 18px;
+  color: #f2f2f2;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+}
+
 .pageHome {
   width: 90%;
   margin-left: auto;
@@ -396,6 +427,12 @@ header {
   .section__about {
     width: 100%;
   }
+}
+.lodging__home {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=index.css.map */

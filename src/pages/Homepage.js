@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Banner from '../components/Banner'
 import SectionHome from '../components/SectionHome';
 

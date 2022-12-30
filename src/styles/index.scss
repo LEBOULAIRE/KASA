@@ -9,9 +9,11 @@
 @import "./components/NotError";
 @import "./components/footer";
 @import "./components/Collapse";
+@import "./components/_carrousel.scss";
 
 
 //Import pages
 @import "./pages/home";
 @import "./pages/error";
-@import "./pages/about"
+@import "./pages/about";
+@import "./pages/lodging";
