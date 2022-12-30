@@ -389,6 +389,40 @@ header {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
 }
 
+.prevImg {
+  rotate: 90deg;
+  width: 45px;
+}
+
+.nextImg {
+  rotate: -90deg;
+  width: 45px;
+}
+
+@media screen and (max-width: 992px) {
+  .lodging__picture {
+    height: 300px;
+    border-radius: 20px;
+  }
+  .prevImg {
+    width: 30px;
+  }
+  .nextImg {
+    width: 30px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .lodging__picture {
+    height: 255px;
+    border-radius: 10px;
+  }
+  .prevImg {
+    width: 25px;
+  }
+  .nextImg {
+    width: 25px;
+  }
+}
 .pageHome {
   width: 90%;
   margin-left: auto;

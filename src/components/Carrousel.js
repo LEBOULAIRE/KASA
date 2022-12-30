@@ -19,7 +19,7 @@ const Carrousel = ({arrow}) => {
       const arrowLeft =
             pictures.length > 1 ? (
                   <div className="main__lodging--arrow-left" onClick={prevImg}>
-                       <img src={arrow} alt="fleche de direction gauche" className=''/>
+                       <img src={arrow} alt="fleche de direction gauche" className='prevImg'/>
                   </div>
             ) : (
                   ''
@@ -27,7 +27,7 @@ const Carrousel = ({arrow}) => {
       const arrowRight =
             pictures.length > 1 ? (
                   <div className="main__lodging--arrow-right" onClick={nextImg}>
-                        <img src={arrow} alt="fleche de direction droit" />
+                        <img src={arrow} alt="fleche de direction droit" className='nextImg'/>
                   </div>
             ) : (
                   ''

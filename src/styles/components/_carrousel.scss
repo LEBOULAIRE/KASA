@@ -1,25 +1,20 @@
 .main__lodging {
-    
       position: relative;
-    
+
       &--arrow-left {
-        position: absolute;
-        top : 50%;
-        transform: translateY(-50%);
-        left : 10px
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 10px {
 
-            {
-        }
-    
-    }
-    &--arrow-right {
-        position: absolute;
-        top : 50%;
-        transform: translateY(-50%);
-        right: 10px;
-    
-    }
-
+            }
+      }
+      &--arrow-right {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 10px;
+      }
 }
 
 .lodging__picture {
@@ -27,19 +22,58 @@
       object-fit: cover;
       height: 415px;
       border-radius: 25px;
-  
-    &--number {
-    position: absolute;
-    right: 50%;
-    transform: translateX(-50%);
-    bottom: 18px;
-    color: #f2f2f2;
-        background: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0)
-);
-    
-    }
 
+      &--number {
+            position: absolute;
+            right: 50%;
+            transform: translateX(-50%);
+            bottom: 18px;
+            color: #f2f2f2;
+            background: linear-gradient(
+                  to top,
+                  rgba(0, 0, 0, 0.6),
+                  rgba(0, 0, 0, 0)
+            );
+      }
+}
+
+// Direction des fleches et la taille
+.prevImg {
+      rotate: 90deg;
+      width: 45px;
+}
+
+.nextImg {
+      rotate: -90deg;
+      width: 45px;
+}
+
+@media screen and (max-width: 992px) {
+      .lodging__picture {
+            height: 300px;
+            border-radius: 20px;
+      }
+
+      .prevImg {
+            width: 30px;
+      }
+
+      .nextImg {
+            width: 30px;
+      }
+}
+
+@media screen and (max-width: 992px) {
+      .lodging__picture {
+            height: 255px;
+            border-radius: 10px;
+      }
+
+      .prevImg {
+            width: 25px;
+      }
+
+      .nextImg {
+            width: 25px;
+      }
 }
