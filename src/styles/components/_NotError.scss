@@ -1,59 +1,48 @@
 .pageError {
-display: flex;
-flex-direction: column;
-align-items: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
+      &--number {
+            font-size: 288px;
+            font-weight: 700;
+            margin: 150px 0 0 0;
+      }
 
+      &--text {
+            font-size: 36px;
+            font-weight: 500;
+            margin: 0 0 170px 0;
+            text-align: center;
+      }
 
-    &--number {
-        font-size: 288px;
-        font-weight: 700;
-        margin: 150px 0 0 0;
-    }
-
-    &--text {
-        font-size: 36px;
-        font-weight: 500;
-        margin : 0 0 170px 0;
-        text-align: center;
-    
-    }
-
-    &--toHome {
-    display: block;
-    font-size: 18px;
-    color : #FF6060;
-    margin-bottom: 150px;
-    text-align: center;
-    
-    }
+      &--toHome {
+            display: block;
+            font-size: 18px;
+            color: #ff6060;
+            margin-bottom: 150px;
+            text-align: center;
+      }
 }
 
 @media screen and (max-width: 992px) {
-    .pageError--number {
-        
-        font-size: 200px;
-    
-    }
-    .pageError--text {
-        font-size : 26px
-    }
-    
+      .pageError--number {
+            font-size: 200px;
+      }
+      .pageError--text {
+            font-size: 26px;
+      }
 }
 
-@media screen and (max-width: 768px){
-    .pageError--number {
-        
-        font-size: 96px;
-    
-    }
-    .pageError--text {
-        font-size : 18px;
-        margin-bottom: 140px;
-    }
-    .pageError--toHome {
-        font-size : 14px;
-    
-    }
-
+@media screen and (max-width: 768px) {
+      .pageError--number {
+            font-size: 96px;
+      }
+      .pageError--text {
+            font-size: 18px;
+            margin-bottom: 140px;
+      }
+      .pageError--toHome {
+            font-size: 14px;
+      }
 }
