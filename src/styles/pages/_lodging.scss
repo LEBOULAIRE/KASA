@@ -5,10 +5,58 @@
       margin-top: 30px;
 }
 
+// Partie titre de chaque logement 
+.block__title-lodging {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 24px;
+    margin-bottom: 40px;
+}
+
+.title__lodging {
+    width: 75%;
+    h1 {
+    font-weight: 500;
+    margin-bottom: 0;
+    font-size : 36px
+    }
+    h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 5px;
+    }
+
+    .tags {
+        display: flex;
+        gap : 10px
+    
+    }
+
+    .tag {
+        height: 30px;
+        background-color: #ff6060;
+        color : #f2f2f2;
+        font-size: 14px;
+        width: 15%;
+        border-radius: 10px; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
+
+// Partie Collapse 
 .bloc__colapse__lodging {
       display: flex;
       gap: 70px;
       width: 100%;
+      margin-bottom: 100px;
 
       .lmj__cart--title {
             font-size: 18px;
@@ -30,7 +78,21 @@
 @media screen and (max-width: 992px) {
     .bloc__colapse__lodging {
     flex-direction: column;
-    gap: 20;
+    gap: 20px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .bloc__colapse__lodging {
+        gap: 15px;
+
+        .lmj__cart--title {
+            font-size: 14px;
+      }
+      .lmj__cart--text {
+            font-size: 14px;
+      }
     }
 
 }

@@ -19,7 +19,7 @@ const Collapse = ({ title, content, arrow }) => {
                               />
                         </div>
                   </div>
-                  <p className="lmj__cart--text">{content}</p>
+                  <div className="lmj__cart--text">{content}</div>
             </div>
       ) : (
             <div className="lmj__cart">

@@ -425,6 +425,31 @@ header {
     width: 25px;
   }
 }
+.host {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.host__info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.host__info-name {
+  width: 93px;
+  font-size: 18px;
+  text-align: right;
+  margin-right: 10px;
+}
+.host__info-picture {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+}
+
 .pageHome {
   width: 90%;
   margin-left: auto;
@@ -471,10 +496,49 @@ header {
   margin-top: 30px;
 }
 
+.block__title-lodging {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
+.title__lodging {
+  width: 75%;
+}
+.title__lodging h1 {
+  font-weight: 500;
+  margin-bottom: 0;
+  font-size: 36px;
+}
+.title__lodging h2 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+.title__lodging .tags {
+  display: flex;
+  gap: 10px;
+}
+.title__lodging .tag {
+  height: 30px;
+  background-color: #ff6060;
+  color: #f2f2f2;
+  font-size: 14px;
+  width: 15%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .bloc__colapse__lodging {
   display: flex;
   gap: 70px;
   width: 100%;
+  margin-bottom: 100px;
 }
 .bloc__colapse__lodging .lmj__cart--title {
   font-size: 18px;
@@ -495,7 +559,18 @@ header {
 @media screen and (max-width: 992px) {
   .bloc__colapse__lodging {
     flex-direction: column;
-    gap: 20;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bloc__colapse__lodging {
+    gap: 15px;
+  }
+  .bloc__colapse__lodging .lmj__cart--title {
+    font-size: 14px;
+  }
+  .bloc__colapse__lodging .lmj__cart--text {
+    font-size: 14px;
   }
 }
 

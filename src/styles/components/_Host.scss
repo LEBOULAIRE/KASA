@@ -1,0 +1,25 @@
+.host {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+}
+
+.host__info {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 20px;
+
+      &-name {
+            width: 93px;
+            font-size: 18px;
+            text-align: right;
+            margin-right: 10px;
+      }
+      &-picture {
+            height: 64px;
+            width: 64px;
+            border-radius: 50%;
+      }
+}
