@@ -331,7 +331,7 @@ header {
 }
 
 .arrow_top {
-  rotate: 180deg;
+  transform: rotate(180deg);
 }
 
 @media screen and (max-width: 992px) {
@@ -392,12 +392,12 @@ header {
 }
 
 .prevImg {
-  rotate: 90deg;
+  transform: rotate(90deg);
   width: 45px;
 }
 
 .nextImg {
-  rotate: -90deg;
+  transform: rotate(-90deg);
   width: 45px;
 }
 

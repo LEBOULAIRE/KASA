@@ -1,22 +1,19 @@
 header {
-display: flex;
-justify-content: space-between;
-align-items: center;
-width: 90%;
-margin: 0 auto 0 auto;
-
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      margin: 0 auto 0 auto;
 }
 
-@media screen and (max-width: 992px){
-    .logo-header {
-        width: 70%;}
-
+@media screen and (max-width: 992px) {
+      .logo-header {
+            width: 70%;
+      }
 }
 
-@media screen and (max-width: 768px){
-    .logo-header{
-        width: 60%;
-       
-    }
-
+@media screen and (max-width: 768px) {
+      .logo-header {
+            width: 60%;
+      }
 }

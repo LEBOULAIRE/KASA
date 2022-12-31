@@ -39,12 +39,14 @@
 
 // Direction des fleches et la taille
 .prevImg {
-      rotate: 90deg;
+      transform : rotate(90deg);
       width: 45px;
+
+
 }
 
 .nextImg {
-      rotate: -90deg;
+      transform : rotate(-90deg);
       width: 45px;
 }
 
