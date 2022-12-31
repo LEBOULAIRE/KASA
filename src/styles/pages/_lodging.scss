@@ -8,24 +8,30 @@
 // Partie titre de chaque logement 
 .block__title-lodging {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     margin-top: 24px;
     margin-bottom: 40px;
+    
 }
 
 .title__lodging {
     width: 75%;
+    display: flex;
+    flex-direction: column;
+   
+   
     h1 {
     font-weight: 500;
     margin-bottom: 0;
+    margin-top: 0;
     font-size : 36px
     }
     h2 {
     font-size: 18px;
     font-weight: 500;
     margin-top: 5px;
+    margin-bottom: 20px;
     }
 
     .tags {
@@ -70,6 +76,7 @@
       .lmj__cart--text {
             font-size: 18px;
       }
+      .arrow__about {right: 15px;}
 }
 
 .lodging-info__list {
@@ -90,6 +97,49 @@
 }
 
 @media screen and (max-width: 768px) {
+      .block__title-lodging {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 5px;
+      
+      }
+
+      .title__lodging {
+            h1 { 
+            font-size : 20px;
+            margin-bottom: 5px;
+            }
+            h2 {
+            font-size: 16px;
+            margin-bottom: 9px;
+            }
+            .tags {
+                  display: flex;
+                  
+                  gap : 10px
+              
+              }
+          
+              .tag {
+                  height: 20px;
+               
+                  font-size: 14px;
+                  
+                  padding: 3px 3px 3px 3px;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      color:  #f2f2f2;
+                      background-color: #ff6060;
+                      width: 30%;
+                      border-radius: 10px;
+                      font-size: 13px;
+                      margin-right: 10px;
+                      margin-bottom: 10px;
+              }
+            
+      }
+      
     .bloc__colapse__lodging {
         gap: 15px;
 

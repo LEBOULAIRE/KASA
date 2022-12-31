@@ -14,7 +14,7 @@ const Lodging = () => {
     const { id } = useParams();
     const infoLodging = JSON.find((lodging)=> lodging.id === id)
     const {title, location, tags, host, rating, description, equipments} = infoLodging;
-   
+
     // Faire la liste des equipements
   
     return (
@@ -29,7 +29,7 @@ const Lodging = () => {
                 <div className="tags">
 						{tags.map((tag) => {
 							return (
-								<div key={`${tag}`} className="tag">
+								<div key={`${tag}`} className="tag" >
 									{tag}
 								</div>
 							);
@@ -39,7 +39,7 @@ const Lodging = () => {
 
                 <div className='host'>
                 <Host host={host}/>
-                <Rating rating={rating}/>
+                <Rating rating={rating} title={title}/>
                 </div>
             </div>
 

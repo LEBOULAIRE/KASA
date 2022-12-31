@@ -436,7 +436,6 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 20px;
 }
 .host__info-name {
   width: 93px;
@@ -450,6 +449,54 @@ header {
   border-radius: 50%;
 }
 
+@media screen and (max-width: 992px) {
+  .host__info-name {
+    width: 65px;
+    font-size: 16px;
+    text-align: right;
+    margin-right: 10px;
+  }
+  .host__info-picture {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .host {
+    flex-direction: row-reverse;
+    width: 100%;
+    align-items: center;
+  }
+  .host__info-name {
+    width: 65px;
+    font-size: 14px;
+    text-align: right;
+    margin-right: 10px;
+  }
+  .host__info-picture {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }
+}
+.star {
+  height: 30px;
+  width: 30px;
+}
+
+@media screen and (max-width: 992px) {
+  .star {
+    height: 25px;
+    width: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .star {
+    height: 20px;
+    width: 20px;
+  }
+}
 .pageHome {
   width: 90%;
   margin-left: auto;
@@ -498,25 +545,28 @@ header {
 
 .block__title-lodging {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   margin-top: 24px;
   margin-bottom: 40px;
 }
 
 .title__lodging {
   width: 75%;
+  display: flex;
+  flex-direction: column;
 }
 .title__lodging h1 {
   font-weight: 500;
   margin-bottom: 0;
+  margin-top: 0;
   font-size: 36px;
 }
 .title__lodging h2 {
   font-size: 18px;
   font-weight: 500;
   margin-top: 5px;
+  margin-bottom: 20px;
 }
 .title__lodging .tags {
   display: flex;
@@ -550,6 +600,9 @@ header {
 .bloc__colapse__lodging .lmj__cart--text {
   font-size: 18px;
 }
+.bloc__colapse__lodging .arrow__about {
+  right: 15px;
+}
 
 .lodging-info__list {
   margin: 0;
@@ -567,6 +620,38 @@ header {
   }
 }
 @media screen and (max-width: 768px) {
+  .block__title-lodging {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 5px;
+  }
+  .title__lodging h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .title__lodging h2 {
+    font-size: 16px;
+    margin-bottom: 9px;
+  }
+  .title__lodging .tags {
+    display: flex;
+    gap: 10px;
+  }
+  .title__lodging .tag {
+    height: 20px;
+    font-size: 14px;
+    padding: 3px 3px 3px 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f2f2f2;
+    background-color: #ff6060;
+    width: 30%;
+    border-radius: 10px;
+    font-size: 13px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
   .bloc__colapse__lodging {
     gap: 15px;
   }

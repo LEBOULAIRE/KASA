@@ -9,7 +9,7 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      margin-bottom: 20px;
+     
 
       &-name {
             width: 93px;
@@ -23,3 +23,55 @@
             border-radius: 50%;
       }
 }
+@media screen and (max-width: 992px){
+      .host {
+            
+      
+            &__info {
+                 
+                  &-name {
+                        width: 65px;
+                        font-size: 16px;
+                        text-align: right;
+                        margin-right: 10px;
+                  }
+                  &-picture {
+                        height: 55px;
+                        width: 55px;
+                        border-radius: 50%;
+                  }
+            }
+      
+      
+      
+      }
+  
+  }
+
+@media screen and (max-width: 768px){
+      .host {
+            flex-direction: row-reverse;
+            width: 100%;
+            align-items: center;
+      
+            &__info {
+                 
+                  &-name {
+                        width: 65px;
+                        font-size: 14px;
+                        text-align: right;
+                        margin-right: 10px;
+                  }
+                  &-picture {
+                        height: 40px;
+                        width: 40px;
+                        border-radius: 50%;
+                  }
+            }
+      
+      
+      
+      }
+  
+  }
+  
