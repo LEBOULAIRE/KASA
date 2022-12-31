@@ -625,6 +625,9 @@ header {
     align-items: flex-start;
     margin-top: 5px;
   }
+  .title__lodging {
+    width: 100%;
+  }
   .title__lodging h1 {
     font-size: 20px;
     margin-bottom: 5px;
@@ -634,8 +637,11 @@ header {
     margin-bottom: 9px;
   }
   .title__lodging .tags {
-    display: flex;
-    gap: 10px;
+    width: auto;
+    gap: 5px;
+    flex-wrap: wrap;
+    width: 100%;
+    row-gap: 2px;
   }
   .title__lodging .tag {
     height: 20px;
@@ -646,7 +652,7 @@ header {
     align-items: center;
     color: #f2f2f2;
     background-color: #ff6060;
-    width: 30%;
+    width: 20%;
     border-radius: 10px;
     font-size: 13px;
     margin-right: 10px;
