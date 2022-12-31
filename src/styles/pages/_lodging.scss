@@ -1,6 +1,36 @@
 .lodging__home {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px;
+}
+
+.bloc__colapse__lodging {
+      display: flex;
+      gap: 70px;
+      width: 100%;
+
+      .lmj__cart--title {
+            font-size: 18px;
+      }
+      .lmj__cart--text {
+            font-size: 18px;
+      }
+}
+
+.lodging-info__list {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      li {
+            margin-bottom: 3px;
+      }
+}
+
+@media screen and (max-width: 992px) {
+    .bloc__colapse__lodging {
+    flex-direction: column;
+    gap: 20;
+    }
+
 }
