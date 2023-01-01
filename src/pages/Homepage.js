@@ -24,7 +24,7 @@ const Homepage = () => {
                         className="bannerHomeOrAbout__Img"
                         text={textBannerComputer}
                         textPhone={textBannerSmarphone}
-                        alt = "Image d'un appartement"
+                        alt="Image de falaise"
                   />
                   <SectionHome />
             </div>
