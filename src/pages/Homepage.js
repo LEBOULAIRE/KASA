@@ -3,9 +3,10 @@ import Banner from '../components/Banner'
 import SectionHome from '../components/SectionHome';
 
 
+
 const Homepage = () => {
     return (
-        <div className='pageHome'>
+         <div className='pageHome'>
             <Banner />
             <SectionHome />
         </div>

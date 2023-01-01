@@ -6,6 +6,7 @@ import Host from '../components/Host';
 import Rating from '../components/Rating'
 import { useParams } from 'react-router-dom';
 import JSON from '../datas/logements.json';
+import NotError from '../components/NotError';
 
 
 
@@ -13,11 +14,13 @@ const Lodging = () => {
     
     const { id } = useParams();
     const infoLodging = JSON.find((lodging)=> lodging.id === id)
-    const {title, location, tags, host, rating, description, equipments} = infoLodging;
-
-    // Faire la liste des equipements
-  
+   
+    if (infoLodging == null) {
+        return <NotError />;
+      }
+      const {title, location, tags, host, rating, description, equipments} = infoLodging;
     return (
+        
         <div className='lodging__home'>
 
             <Carrousel arrow={arrow}/>

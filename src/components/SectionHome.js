@@ -2,6 +2,7 @@ import React from 'react';
 import JSON from '../datas/logements.json';
 import Cart from './Cart';
 
+
 const SectionHome = () => {
       return (
             <section className="sectionHome">
