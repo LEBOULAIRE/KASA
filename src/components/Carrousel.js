@@ -16,6 +16,8 @@ const Carrousel = ({arrow}) => {
       const prevImg = () => {
             setCurrent(current === 0 ? pictures.length - 1 : current - 1);
       };
+
+      // Si plus qu'une image dans le carrousel, fleche qui apparaise
       const arrowLeft =
             pictures.length > 1 ? (
                   <div className="main__lodging--arrow-left" onClick={prevImg}>

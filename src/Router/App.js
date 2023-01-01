@@ -6,7 +6,6 @@ import Error from '../pages/Error';
 import Homepage from '../pages/Homepage';
 import Lodging from '../pages/Lodging';
 
-
 // function de l'apllication
 function App() {
     return (
